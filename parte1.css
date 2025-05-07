@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .google-play-header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    overflow: hidden;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .letter {
+    margin: 0 2px;
+  }
+  
+  .letter-1 { color: #3498db; }
+  .letter-2 { color: #2ecc71; }
+  .letter-3 { color: #2ecc71; }
+  .letter-4 { color: #f39c12; }
+  .letter-5 { color: #e74c3c; }
+  .letter-6 { color: #e74c3c; }
+  .letter-7 { color: #3498db; }
+  .letter-8 { color: #2ecc71; }
+  .letter-9 { color: #f39c12; }
+  .letter-10 { color: #e74c3c; }
+  .letter-11 { color: #3498db; }
+  
+  .container {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .play-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .rotating {
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .activate-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .activate-btn:hover {
+    background-color: #2a8e42;
+  }
+  
+  .spinner {
+    margin: 20px auto 10px;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #34a853;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .message {
+    font-size: 14px;
+    color: #666;
+    display: none;
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #999;
+  }
+  
